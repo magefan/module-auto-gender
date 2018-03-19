@@ -1,0 +1,23 @@
+{
+    "name": "magefan/module-autogender",
+    "description": "",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "barttyrant/php_genderize": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magefan\\AutoGender\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
