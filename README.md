@@ -1,4 +1,4 @@
-# Magento 2 Auto Gented Detection Extension by [Magefan](https://magefan.com/magento2-extensions)
+# Magento 2 Auto Gender Detection Extension by [Magefan](https://magefan.com/magento2-extensions)
 
 
 This Magento 2 module allows automatically detect customer gender by name.
