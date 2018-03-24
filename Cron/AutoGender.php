@@ -1,8 +1,9 @@
 <?php
 /**
  * Copyright © Magefan (support@magefan.com). All rights reserved.
- * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ * See LICENSE.txt for license details (http://opensource.org/licenses/osl-3.0.php).
  */
+
 namespace Magefan\AutoGender\Cron;
 
 /**
@@ -21,10 +22,19 @@ class AutoGender
      */
     protected $gender = ['male', 'female'];
 
+    /**
+     * Gender Male
+     */
     const MALE = 1;
 
+    /**
+     * Gender Female
+     */
     const FEMALE = 2;
 
+    /**
+     * Gender not specified
+     */
     const NOT_SPECIFIED = 3;
 
     /**
@@ -33,7 +43,7 @@ class AutoGender
      */
     public function __construct(
         \Magento\Customer\Model\CustomerFactory $customerFactory
-    ){
+    ) {
         $this->customerFactory = $customerFactory;
     }
 
@@ -48,6 +58,7 @@ class AutoGender
             ->addFieldToFilter('gender', ['null' => true])
             ->setPageSize(10);
         $customer->getSelect()->orderRand();
+
         foreach ($customer as $custom) {
             $customName = $custom->getFirstname();
             $recognizer = new \Genderize\Base\Recognizer($customName);
@@ -70,6 +81,5 @@ class AutoGender
                 }
             }
         }
-
     }
 }
