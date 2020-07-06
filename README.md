@@ -4,7 +4,7 @@
 This Magento 2 module allows automatically detect customer gender by name.
 
 ## Requirements
-  * Magento Community Edition 2.1.x-2.2.x or Magento Enterprise Edition 2.1.x-2.2.x
+  * Magento Community Edition 2.1.x-2.3.x or Magento Enterprise Edition 2.1.x-2.3.x
 
 ## Installation Method 1 - Installing via composer
   * Open command line
