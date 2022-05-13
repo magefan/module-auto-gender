@@ -1,5 +1,7 @@
 # Magento 2 Auto Gender Detection Extension by [Magefan](https://magefan.com/magento2-extensions)
 
+<a href="https://www.comebackalive.in.ua/donate"><img width="830" height="208" src="https://cm.magefan.com/blog/support-ukraine.png"></a>
+
 <img width="150" height="100" src="https://magefan.com/media/wysiwyg/made_in_ukraine.jpg">
 
 
